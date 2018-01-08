@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "databaseAccounts_pschat_name": {
+      "value": "pschatcosmos"
+    },
+    "accounts_pschatai_name": {
+      "value": "pschatsentiment"
+    },
+    "accounts_pschatluis_name": {
+      "value": "pschatluis"
+    },
+    "databaseAccounts_pschat_name_1": {
+      "value": "pschatcosmosaamir789678"
+    },
+    "namespaces_psevents_namespace_name": {
+      "value": "psevents-namespaceaamir789678"
+    },
+    "namespaces_psevents2_namespace_name": {
+      "value": "psevents2-namespaceaamir789678"
+    },
+    "storageAccounts_pschatstore_name": {
+      "value": "pschatstoreaamir789678"
+    },
+    "serverfarms_pschat_name": {
+      "value": "pschatappserviceplan"
+    },
+    "sites_pschatprocessor_name": {
+      "value": "pschatprocessorwebjobaamir789678"
+    },
+    "sites_pschatwebapp_name": {
+      "value": "pschatwebaamir789678"
+    },
+    "AuthorizationRules_RootManageSharedAccessKey_name": {
+      "value": "psevents-namespaceaamir789678/RootManageSharedAccessKey"
+    },
+    "AuthorizationRules_ChatConsole_name": {
+      "value": "psevents-namespaceaamir789678/ChatConsole"
+    },
+    "eventhubs_pschathub1_name": {
+      "value": "psevents-namespaceaamir789678/pschateventhub1"
+    },
+    "eventhubs_pschathub2_name": {
+      "value": "psevents-namespaceaamir789678/pschateventhub2"
+    },
+    "consumergroups_pschathub1_$Default_name": {
+      "value": "psevents-namespaceaamir789678/pschateventhub1/$Default"
+    },
+    "consumergroups_pschathub2_$Default_name": {
+      "value": "psevents-namespaceaamir789678/pschateventhub2/$Default"
+    },
+    "AuthorizationRules_RootManageSharedAccessKey_name_1": {
+      "value": "psevents2-namespaceaamir789678/RootManageSharedAccessKey"
+    },
+    "AuthorizationRules_ChatConsole_name_1": {
+      "value": "psevents2-namespaceaamir789678/ChatConsole"
+    },
+    "topics_pschat_name": {
+      "value": "psevents2-namespaceaamir789678/pschat"
+    },
+    "config_pschatprocessor_name": {
+      "value": "pschatprocessorwebjobaamir789678/web"
+    },
+    "config_pschatwebapp_name": {
+      "value": "pschatwebaamir789678/web"
+    }
+  }
+}

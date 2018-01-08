@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title - Poolside Chat</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script type="text/javascript">
+        if (!com) var com = {};
+        if (!com.poolside) com.poolside = {};
+        com.poolside.chat = { findUniqueSearchUsers: null, addUserIfNeeded: null, getAvatarColor: null }
+    </script>
+
+</head>
+<body>
+    <div id="wrap" class="grayGradient">
+        <div class="navbar navbar-info navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="@Url.Action("Index", "Home", new {area = ""})" class="navbar-brand">
+                        <h4>Poolside Chat</h4></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="main" class="hero-unit">
+            <div class="container body-content">
+                @RenderBody()
+            </div>
+        </div>
+
+    </div>
+    <footer role="contentinfo" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    &copy; @DateTime.Now.Year | Poolside Chat, all rights reserved | <a href='http://www.freepik.com/free-photo/water-texture-with-wooden-board_902430.htm'>Hero Image Designed by Freepik</a>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/searchClient")
+    @Scripts.Render("~/bundles/chatClient")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
